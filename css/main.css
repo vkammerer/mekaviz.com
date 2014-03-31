@@ -1,0 +1,49 @@
+body{
+    margin:0px;
+    background:blue;
+}
+.home-site-info,
+.site-info {
+    display:none;
+}
+.home-header {
+    position: fixed !important;
+}
+.home-wrapper {
+    margin-top: 80px !important;
+}
+.home-navigation ul li.active a span,
+.home-navigation ul li a:hover,
+.home-navigation ul li a.active:hover {
+    color: #FFCD00;
+}
+
+@font-face {
+    font-family: 'Sri-TSCRegular';
+    src: url('/vk/font/planer_reg.eot');
+    src: url('/vk/font/planer_reg.eot?#iefix') format('embedded-opentype'),
+         url('/vk/font/planer_reg.woff') format('woff'),
+         url('/vk/font/planer_reg.ttf') format('truetype'),
+         url('/vk/font/planer_reg.svg#Sri-TSCRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.banner-box {
+    color:white;
+}
+.section-banner h1 {
+    font-family: "Sri-TSCRegular", serif;
+    padding-top: 15px;
+}
+@media screen and (max-width:619px) {
+.section-banner h1 {
+    font-size:44px;
+}
+}
+
+.nous img {
+    border: 4px solid black;
+}
+.home-container {
+    padding: 50px 5% 25px;
+}

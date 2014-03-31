@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'PlanerRegular';
+    src: url('planer_reg.eot');
+    src: url('planer_reg.eot') format('embedded-opentype'),
+         url('planer_reg.woff') format('woff'),
+         url('planer_reg.ttf') format('truetype'),
+         url('planer_reg.svg#PlanerRegular') format('svg');
+}

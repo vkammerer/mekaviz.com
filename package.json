@@ -1,0 +1,10 @@
+{
+  "name": "mekaviz.com",
+  "description": "Customization folder of mekaviz.com",
+  "version": "0.0.0",
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-ftp": "~0.2.0",
+    "gulp-watch": "~0.5.3"
+  }
+}
