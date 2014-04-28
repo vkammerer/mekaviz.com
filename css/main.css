@@ -1,49 +1,222 @@
 body{
-    margin:0px;
-    background:blue;
+	margin:0px;
+	background:black;
 }
+body .vklfr {
+	display: none !important;
+}
+body.vklfr .vklfr {
+	display: inline-block !important;
+}
+body.vklfr .vklen {
+	display: none !important;
+}
+@font-face {
+	font-family: 'Sri-TSCRegular';
+	src: url('/vk/font/planer_reg.eot');
+	src: url('/vk/font/planer_reg.eot?#iefix') format('embedded-opentype'),
+		 url('/vk/font/planer_reg.woff') format('woff'),
+		 url('/vk/font/planer_reg.ttf') format('truetype'),
+		 url('/vk/font/planer_reg.svg#Sri-TSCRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* remove onetone */
 .home-site-info,
 .site-info {
-    display:none;
+	display:none;
 }
+
 .home-header {
-    position: fixed !important;
+	position: absolute !important;
 }
-.home-wrapper {
-    margin-top: 80px !important;
+.home-container {
+	padding: 10px 5% 50px;
 }
+@media screen and (min-width:1120px) {
+	.home-wrapper {
+		margin-top: 80px !important;
+	}
+}
+
+/* Dark background */
+
+.vkdark,
+.section-about li,
+.section-about p,
+.section-about h1,
+.vkdark li,
+.vkdark p,
+.vkdark h1,
+.vkdark h3 {
+	color: #AAA;
+}
+
+/* Yellow */
+
+a,
 .home-navigation ul li.active a span,
 .home-navigation ul li a:hover,
 .home-navigation ul li a.active:hover {
-    color: #FFCD00;
+	color: #FFCD00;
 }
 
-@font-face {
-    font-family: 'Sri-TSCRegular';
-    src: url('/vk/font/planer_reg.eot');
-    src: url('/vk/font/planer_reg.eot?#iefix') format('embedded-opentype'),
-         url('/vk/font/planer_reg.woff') format('woff'),
-         url('/vk/font/planer_reg.ttf') format('truetype'),
-         url('/vk/font/planer_reg.svg#Sri-TSCRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+.section h1,
+.section h3 {
+	font-family: "Sri-TSCRegular", serif;
+}
+.section h1 {
+	padding-top: 15px;
+	margin-bottom: 20px;
+	margin-top: 20px;
 }
 .banner-box {
-    color:white;
+	color:white;
+	padding-bottom: 0;
 }
-.section-banner h1 {
-    font-family: "Sri-TSCRegular", serif;
-    padding-top: 15px;
+@media screen and (max-width:1119px) {
+	.section-banner h1 {
+		font-size:44px;
+	}
+	.section h1{
+		font-size:50px;
+		line-height: 140%;
+	}
 }
-@media screen and (max-width:619px) {
-.section-banner h1 {
-    font-size:44px;
-}
+.banner-box {
+	min-height: 540px;
 }
 
+/* Features */
+
+.onetone-features h1 {
+	margin-bottom: 0px;
+}
+
+/* About */
+
+.section-about p {
+	line-height: 140%;
+	margin-bottom: 10px;
+}
+
+.info-phone {
+	background: url(/wp-content/uploads/2014/03/phone.png) 0 8px no-repeat;
+}
+.info-address {
+	background: url(/wp-content/uploads/2014/03/streamline.png) 0 8px no-repeat;
+}
+.info-email {
+	background: url(/wp-content/uploads/2014/03/email.png) 0 8px no-repeat;
+}
+.info-website {
+	background: url(/wp-content/uploads/2014/03/computer.png) 0 8px no-repeat;
+
+}
+
+/* Team */
 .nous img {
-    border: 4px solid black;
+	border: 4px solid white;
 }
-.home-container {
-    padding: 50px 5% 25px;
+.nous .name {
+	padding-top: 30px;
+	font-family: "Sri-TSCRegular", serif;
+	vertical-align: bottom;
 }
+.nous .name .firstLetter {
+	font-size: 120px;
+}
+
+/* Gallery */
+
+#gallery-1 .gallery-item {
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	padding:20px;
+	margin-top: 0px !important;	
+}
+@media screen and (max-width:959px) {
+	#gallery-1 .gallery-item {
+		width: 100% !important;
+	}
+}
+
+
+#gallery-1 .gallery-item img {
+	border:4px solid white;
+	-webkit-box-shadow: 0 3px 14px 0 rgba(0,0,0,0.4);
+	box-shadow: 0 3px 14px 0 rgba(0,0,0,0.4);
+-webkit-transition: all 200ms linear;
+-moz-transition: all 200ms linear;
+-ms-transition: all 200ms linear;
+-o-transition: all 200ms linear;
+transition: all 200ms linear;
+}
+#gallery-1 .gallery-item img:hover {
+	-webkit-box-shadow: 0 3px 24px 0 rgba(0,0,0,0.6);
+	box-shadow: 0 3px 24px 0 rgba(0,0,0,0.6);
+-webkit-transition: all 200ms linear;
+-moz-transition: all 200ms linear;
+-ms-transition: all 200ms linear;
+-o-transition: all 200ms linear;
+transition: all 200ms linear;
+}
+
+
+/* Contact */
+
+.noticefailed,
+.noticesuccess {
+	padding-bottom: 10px;
+}
+.noticefailed:empty {
+	padding-bottom: 0px;
+}
+
+.galleria-container {
+	background: transparent;	
+}
+.galleria-thumbnails {
+	margin:auto;
+}
+
+#lavalstar {
+	display:none;
+	position:absolute;
+	top:20px;
+	right:20px;
+}
+@media screen and (min-width:1120px) {
+	#lavalstar {
+		display:block;
+	}
+}
+
+
+
+
+
+.embed-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.sidedock {
+	display:none !important;
+}
+
